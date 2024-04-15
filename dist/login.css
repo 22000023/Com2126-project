@@ -1,0 +1,100 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+  --navbar-color: #87CEEB;
+  --background-color: white;
+  --group1-color: white;
+  --group2-color: white;
+  --group3-color: white;
+  --text-color: black;
+  --header-color: #1f6dca;
+  --primary-color: #008080;
+  --text-color-secondary: white;
+  --link-text-color:blue;
+
+  --tran-02: all 0.2s ease;
+  --tran-03: all 0.3s ease;
+  --tran-04: all 0.4s ease;
+  --tran-05: all 0.5s ease;
+}
+
+body{
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+
+.container{
+    position: relative;
+}
+
+h1{
+    color: var(--header-color);
+    padding-bottom: 25px;
+    font-size: 28px;
+    text-align: center;
+}
+
+.login{
+  min-height: 600px;
+  min-width: 450px;
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(10px);
+  background-color: transparent;
+  border-radius: 15px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+  justify-content: center;
+  align-content: center;
+}
+
+.error{
+    display: flex;
+    margin-top: 20px;
+    margin-left: 40px;
+    font-size: 20px;
+    color: red;
+}
+
+.inputBox,
+.btn{
+    padding-top: 30px;
+}
+
+.layoutsize{
+    font-size: 18px;
+    display: flex;
+    margin: 0 35px ;
+    height: 60px;
+    max-width: 400px;
+    width: 95%;
+    border: none;
+    outline-color: var(--header-color);
+    border-radius: 60px;
+    padding-left: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .5);
+}
+
+.btn button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    font-size: 18px;
+}
+
+.btn button:hover{
+    background-color: var(--navbar-color);
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    color: var(--background-color);
+}
+
+input[type="password"]::-ms-reveal{
+    margin-right: 15px;
+}

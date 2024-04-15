@@ -1,0 +1,153 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root{
+  --navbar-color: #87CEEB;
+  --background-color: white;
+  --group1-color: white;
+  --group2-color: white;
+  --group3-color: white;
+  --text-color: black;
+  --header-color: #1f6dca;
+  --primary-color: #008080;
+  --text-color-secondary: white;
+  --link-text-color:blue;
+
+  --tran-02: all 0.2s ease;
+  --tran-03: all 0.3s ease;
+  --tran-04: all 0.4s ease;
+  --tran-05: all 0.5s ease;
+}
+
+body{
+    height: 100vh;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999; /* Ensure it's above other content */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    height: 70px;
+    background-color: var(--navbar-color);
+}
+
+.logo {
+    display: flex;
+    flex: 0 0 auto;
+    height: 60px;
+    margin-right: 20px; /* Adjust as needed */
+}
+
+nav {
+    flex: 1;
+    text-align: center;
+    font-size: 20px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px; /* Adjust as needed */
+}
+
+nav ul li:last-child {
+    margin-right: 0;
+}
+
+a{
+    color: var(--text-color);
+}
+
+a:hover{
+    color: var(--text-color-secondary);
+}
+
+.btn button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    font-size: 18px;
+    background-color: var(--header-color);
+    color: var(--text-color-secondary);
+    border: none;
+    border-radius: 60px;
+    width: 100px;
+    height: 40px;
+    cursor: pointer;
+    outline: none;
+    transition: var(--tran-05);
+     box-shadow: 0 10px 50px rgba(255, 255, 255, .9);
+}
+
+.btn button:hover{
+    background-color: var(--background-color);
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    color: var(--text-color);
+}
+
+.ResTitle{
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    margin-top: 85px;
+    text-decoration-line: underline;
+}
+
+.table {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    gap: 10px;
+    margin-top: 10px;
+    font-size: 18px;
+    padding: 20px;
+}
+
+.table .lowerSize{
+    flex-shrink: 1;
+    min-width: 60px;
+}
+
+h1,
+p{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+
+.cell {
+    display: flex;
+    font-size: 18px;
+    border: 1px solid #000;
+    padding: 5px;
+}
+
+#dropdown {
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    outline: none; /* Remove default focus outline */
+}
+
+/* CSS for dropdown options */
+#dropdown option {
+    padding: 8px;
+    font-size: 80px;
+}

@@ -1,0 +1,239 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root{
+  --navbar-color: #87CEEB;
+  --background-color: white;
+  --group1-color: white;
+  --group2-color: white;
+  --group3-color: white;
+  --text-color: black;
+  --header-color: #1f6dca;
+  --primary-color: #008080;
+  --text-color-secondary: white;
+  --link-text-color:blue;
+
+  --tran-02: all 0.2s ease;
+  --tran-03: all 0.3s ease;
+  --tran-04: all 0.4s ease;
+  --tran-05: all 0.5s ease;
+}
+
+body{
+    height: 100vh;
+    padding-top: 20px;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999; /* Ensure it's above other content */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    height: 70px;
+    background-color: var(--navbar-color);
+}
+
+.logo {
+    display: flex;
+    flex: 0 0 auto;
+    height: 60px;
+    margin-right: 20px; /* Adjust as needed */
+}
+
+nav {
+    flex: 1;
+    text-align: center;
+    font-size: 20px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px; /* Adjust as needed */
+}
+
+nav ul li:last-child {
+    margin-right: 0;
+}
+
+a{
+    color: var(--text-color);
+}
+
+a:hover{
+    color: var(--text-color-secondary);
+}
+
+.btn button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    font-size: 18px;
+    background-color: var(--header-color);
+    color: var(--text-color-secondary);
+    border: none;
+    border-radius: 60px;
+    width: 100px;
+    height: 40px;
+    cursor: pointer;
+    outline: none;
+    transition: var(--tran-04);
+    box-shadow: 0 10px 50px rgba(255, 255, 255, .9);
+}
+
+.btn button:hover{
+    background-color: var(--background-color);
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    color: var(--text-color);
+}
+
+.menu {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 30px;
+    max-width: 1800px;
+    margin: 0 auto;
+    padding: 20px;
+    height: 90vh;
+    align-content: center;
+    margin-top: 100px;
+}
+
+.grid-section {
+    position: relative;
+    background-color: var(--background-color);
+    border-radius: 20px;
+    justify-content: space-between;
+    box-shadow: 0 0 20px rgba(0, 0, 0, .2);
+}
+.icon {
+    font-size: 24px;
+    position: absolute;
+    right: 10px;
+}
+
+h1{
+  color: var(--font-color);
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.boyIcon{
+  color: blue;
+}
+
+.femaleIcon{
+  color: pink;
+}
+
+.F3 .icon,
+.F1 .icon,
+.F2 .icon,
+.F4 .icon,
+.F5 .icon{
+  padding-left: 200px;
+}
+
+h1{
+  padding: 16px;
+  padding-bottom: 0px;
+  font-size: 35px;
+  color: var(--link-text-color);
+}
+
+.resNames{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 20px;
+  padding-bottom: 2px;
+  border-radius: 20px;
+  background: var(--background-color);
+}
+
+.DBSA-male,
+.F4,
+.F3 {
+  background-color: var(--group1-color);
+}
+
+.DBSA-female,
+.F1,
+.F5 {
+  background-color: var(--group2-color);
+}
+
+.newFemale,
+.F2,
+.newMale{
+  background-color: var(--group3-color);
+}
+
+p{
+  font-size: 19px;
+  margin: 20px;
+  padding: 5px 0;
+  border-bottom: 1px solid var(--text-color);
+}
+
+.BTW {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    height: 50px;
+    background-color: transparent;
+    font-size: 18px;
+    padding-top: 2px;
+    border-radius: 25px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+    border: none;
+    transition: all 0.3s; /* Add transition for smooth resizing */
+    min-width: 280px; /* Set initial minimum width */
+    color: var(--font-color);
+}
+
+.BTW:hover {
+    background-color: var(--navbar-color);
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    color: var(--background-color);
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .BTW {
+        min-width: 200px;
+        
+    }
+}
+
+@media (max-width: 480px) {
+    .BTW {
+        min-width: 100px;
+    }
+}
+
+/* Media query for larger screens */
+@media (min-width: 1200px) {
+    .BTW {
+        min-width: 520px;
+    }
+}

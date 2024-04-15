@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="main.css">
+    <title>University of Venda</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="OIP.jpeg" alt="University of venda logo">
+        </div>
+
+        <nav>
+            <ul>
+                <li><a href="#" onclick="services()">Services</a></li>
+                <li><a href="#" onclick="admistrators()">Admistrators</a></li>
+                <li><a href="#" onclick="settings()">Settings</a></li>
+            </ul>
+        </nav>
+
+        <div class="btn">
+            <button class="logout">Signout</button>
+        </div>
+    </header>
+
+    <div class="menu">
+
+        <div class="F1 grid-section">
+            <div class="resNames">
+                <h1>F1<i class='bx bx-male-sign icon boyIcon'></i></h1>
+            </div>
+            <p>Available rooms:
+                <span id="available">0</span>
+            </p>
+            <p>Rooms Occupied:
+                <span id="takenRooms">0</span>
+            </p>
+            <p>Rooms Reported:
+                <span id="reportedRooms">0</span>
+            </p>
+            <button type="button" class="BTW">Allocate</i></button>
+        </div>
+
+        <div class="F2 grid-section">
+            <div class="resNames">
+                <h1>F2<i class='bx bx-female-sign icon femaleIcon'></i></h1>
+            </div>
+            <p>Available rooms:
+                <span id="available">0</span>
+            </p>
+            <p>Rooms Occupied:
+                <span id="takenRooms">0</span>
+            </p>
+            <p>Rooms Reported:
+                <span id="reportedRooms">0</span>
+            </p>
+            <button type="button" class="BTW" onclick="F2Button()">Allocate</i></button>
+        </div>
+
+        <div class="F3 grid-section">
+            <div class="resNames">
+                <h1>F3<i class='bx bx-male-sign icon boyIcon'></i></h1>
+            </div>
+            <p>Available rooms:
+                <span id="available">0</span>
+            </p>
+            <p>Rooms Occupied:
+                <span id="takenRooms">0</span>
+            </p>
+            <p>Rooms Reported:
+                <span id="reportedRooms">0</span>
+            </p>
+            <button type="button" class="BTW" onclick="">Allocate</button>
+        </div>
+
+        <div class="F4 grid-section">
+            <div class="resNames">
+                <h1>F4 <i class='bx bx-female-sign icon femaleIcon'></i></h1>
+            </div>
+            <p>Available rooms:
+                <span id="available">0</span>
+            </p>
+            <p>Rooms Occupied:
+                <span id="takenRooms">0</span>
+            </p>
+            <p>Rooms Reported:
+                <span id="reportedRooms">0</span>
+            </p>
+            <button type="button" class="BTW" onclick="">Allocate</i></button>
+        </div>
+
+        <div class="F5 grid-section">
+            <div class="resNames">
+                <h1>F5 <i class='bx bx-female-sign icon femaleIcon'></i></h1>
+            </div>
+            <p>Available rooms:
+                <span id="available">0</span>
+            </p>
+            <p>Rooms Occupied:
+                <span id="takenRooms">0</span>
+            </p>
+            <p>Rooms Reported:
+                <span id="reportedRooms">0</span>
+            </p>
+            <button type="button" class="BTW" onclick="">Allocate</i></button>
+        </div>
+
+        <div class="newMale grid-section">
+            <div class="resNames">
+                <h1>New-Male<i class='bx bx-male-sign icon boyIcon'></i></h1>
+            </div>
+            <p>Available rooms:
+                <span id="available">0</span>
+            </p>
+            <p>Rooms Occupied:
+                <span id="takenRooms">0</span>
+            </p>
+            <p>Rooms Reported:
+                <span id="reportedRooms">0</span>
+            </p>
+            <button type="button" class="BTW" onclick="">Allocate</i></button>
+        </div>
+
+        <div class="newFemale grid-section">
+            <div class="resNames">
+                <h1>New-Female <i class='bx bx-female-sign icon femaleIcon'></i></h1>
+            </div>
+            <p>Available rooms:
+                <span id="available">0</span>
+            </p>
+            <p>Rooms Occupied:
+                <span id="takenRooms">0</span>
+            </p>
+            <p>Rooms Reported:
+                <span id="reportedRooms">0</span>
+            </p>
+            <button type="button" class="BTW" onclick="">Allocate</i></button>
+        </div>
+
+        <div class="DBSA-male grid-section">
+            <div class="resNames">
+                <h1>DBSA Male <i class='bx bx-male-sign icon boyIcon'></i></h1>
+            </div>
+            <p>Available rooms:
+                <span id="available-DBSA-male">0</span>
+            </p>
+            <p>Rooms Occupied:
+                <span id="takenRooms" onclick="">0</span>
+            </p>
+            <p>Rooms Reported:
+                <span id="reportedRooms" onclick="">0</span>
+            </p>
+            <button type="button" class="BTW" onclick="">Allocate</i></button>
+        </div>
+
+        <div class="DBSA-female grid-section">
+            <div class="resNames">
+                <h1>DBSA Female <i class='bx bx-female-sign icon femaleIcon'></i></h1>
+            </div>
+            <p>Available rooms:
+                <span id="available">0</span>
+            </p>
+            <p>Rooms Occupied:
+                <span id="takenRooms">0</span>
+            </p>
+            <p>Rooms Reported:
+                <span id="reportedRooms">0</span>
+            </p>
+            <button type="button" class="BTW" onclick="">Allocate</i></button>
+        </div>
+    </div>
+
+    <script src="main.bundle.js"></script>
+</body>
+
+</html>
