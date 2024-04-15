@@ -17,16 +17,25 @@ const firebaseConfig = {
 
 initializeApp(firebaseConfig);
 const db = getFirestore();
-const colRef = collection(db, 'F1.Resindene');
+const colRef = collection(db, 'F1.Residence');
 const allocate = document.querySelector('.btn button');
 
 getDocs(colRef)
     .then((snapshot)=>{
-        let  Resindene= []
+        let  Residence= []
         snapshot.docs.forEach((doc) =>{
-            Resindene.push({ ...doc.data(), id: doc.id})// the ... helps speard the data
+            Residence.push({ ...doc.data(), id: doc.id})// the ... helps speard the data
         });
-        console.log(Resindene);
+        console.log(Residence);
+        const data = snapshot.docs[0].data(); // Assuming you have only one document
+                    document.getElementById('room1').value = data.room1;
+                    document.getElementById('floor1').value = data.floor1;
+                    document.getElementById('block1').value = data.block1;
+                    document.getElementById('studentNo1').value = data.studentNo1;
+                    document.getElementById('surname1').value = data.surname1;
+                    document.getElementById('initials1').value = data.initials1;
+                    document.getElementById('bs1').value = data.bs1;
+                    document.getElementById('year1').value = data.year1;
     })
     .catch(err =>{
         console.log(err.message);
@@ -45,22 +54,24 @@ allocate.addEventListener('click', (e) => {
     const bs1 = document.getElementById('bs1').value;
     const year1 = document.getElementById('year1').value;
 
-    // Adding the document to Firestore
-    addDoc(colRef, {
-        roomNo: room1,
-        floorNo: floor1,
-        blockNo: block1,
+    // Reference to the document you want to update
+    const roomDocRef = doc(db, 'F1.Residence', 'roomNo');
+
+    // Update the document
+    updateDoc(roomDocRef, {
+        room: room1,
+        floor: floor1,
+        block: block1,
         studentNo: studentNo1,
         surname: surname1,
         initials: initials1,
-        bursarySponsor: bs1,
-        period: year1
+        bs: bs1,
+        year: year1
     })
-    .then((docRef) => {
-        console.log("Document written with ID: ", docRef.id);
+    .then(() => {
+        console.log("Document successfully updated!");
     })
     .catch((error) => {
-        console.error("Error adding document: ", error);
+        console.error("Error updating document: ", error);
     });
-    
 });
