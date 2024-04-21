@@ -17,7 +17,7 @@ const firebaseConfig = {
 
 initializeApp(firebaseConfig);
 const db = getFirestore();
-const colRef = collection(db, 'F1.Residence');
+const colRef = collection(db, 'NewFemale.Residence');
 const allocate = document.querySelector('.btn button');
 
 
@@ -228,298 +228,298 @@ allocate.addEventListener('click', (e) => {
     const year20 = document.getElementById('year20').value;
 
     // Reference to the document you want to update
-    const roomDocRef = doc(db, 'F1.Residence', 'roomNo');
-    const roomDocRef2 = doc(db, 'F1.Residence', 'roomNo2');
-    const roomDocRef3 = doc(db, 'F1.Residence', 'roomNo3');
-    const roomDocRef4 = doc(db, 'F1.Residence', 'roomNo4');
-    const roomDocRef5 = doc(db, 'F1.Residence', 'roomNo5');
-    const roomDocRef6 = doc(db, 'F1.Residence', 'roomNo6');
-    const roomDocRef7 = doc(db, 'F1.Residence', 'roomNo7');
-    const roomDocRef8 = doc(db, 'F1.Residence', 'roomNo8');
-    const roomDocRef9 = doc(db, 'F1.Residence', 'roomNo9');
-    const roomDocRef10 = doc(db, 'F1.Residence', 'roomNo10');
-    const roomDocRef11 = doc(db, 'F1.Residence', 'roomNo11');
-    const roomDocRef12 = doc(db, 'F1.Residence', 'roomNo12');
-    const roomDocRef13 = doc(db, 'F1.Residence', 'roomNo13');
-    const roomDocRef14 = doc(db, 'F1.Residence', 'roomNo14');
-    const roomDocRef15 = doc(db, 'F1.Residence', 'roomNo15');
-    const roomDocRef16 = doc(db, 'F1.Residence', 'roomNo16');
-    const roomDocRef17 = doc(db, 'F1.Residence', 'roomNo17');
-    const roomDocRef18 = doc(db, 'F1.Residence', 'roomNo18');
-    const roomDocRef19 = doc(db, 'F1.Residence', 'roomNo19');
-    const roomDocRef20 = doc(db, 'F1.Residence', 'roomNo20');
+    const roomDocRef = doc(db, 'NewFemale.Residence', 'roomNo');
+    const roomDocRef2 = doc(db, 'NewFemale.Residence', 'roomNo2');
+    const roomDocRef3 = doc(db, 'NewFemale.Residence', 'roomNo3');
+    const roomDocRef4 = doc(db, 'NewFemale.Residence', 'roomNo4');
+    const roomDocRef5 = doc(db, 'NewFemale.Residence', 'roomNo5');
+    const roomDocRef6 = doc(db, 'NewFemale.Residence', 'roomNo6');
+    const roomDocRef7 = doc(db, 'NewFemale.Residence', 'roomNo7');
+    const roomDocRef8 = doc(db, 'NewFemale.Residence', 'roomNo8');
+    const roomDocRef9 = doc(db, 'NewFemale.Residence', 'roomNo9');
+    const roomDocRef10 = doc(db, 'NewFemale.Residence', 'roomNo10');
+    const roomDocRef11 = doc(db, 'NewFemale.Residence', 'roomNo11');
+    const roomDocRef12 = doc(db, 'NewFemale.Residence', 'roomNo12');
+    const roomDocRef13 = doc(db, 'NewFemale.Residence', 'roomNo13');
+    const roomDocRef14 = doc(db, 'NewFemale.Residence', 'roomNo14');
+    const roomDocRef15 = doc(db, 'NewFemale.Residence', 'roomNo15');
+    const roomDocRef16 = doc(db, 'NewFemale.Residence', 'roomNo16');
+    const roomDocRef17 = doc(db, 'NewFemale.Residence', 'roomNo17');
+    const roomDocRef18 = doc(db, 'NewFemale.Residence', 'roomNo18');
+    const roomDocRef19 = doc(db, 'NewFemale.Residence', 'roomNo19');
+    const roomDocRef20 = doc(db, 'NewFemale.Residence', 'roomNo20');
 
 
     // Update the document
-    let updatePromises = [];
+let updatePromises = [];
 
-    // Push each update operation into the updatePromises array
-    updatePromises.push(updateDoc(roomDocRef, {
-        room: room1,
-        floor: floor1,
-        block: block1,
-        studentNo: studentNo1,
-        surname: surname1,
-        name: name1,
-        bs: bs1,
-        year: year1
-    }));
+// Push each update operation into the updatePromises array
+updatePromises.push(updateDoc(roomDocRef, {
+    room: room1,
+    floor: floor1,
+    block: block1,
+    studentNo: studentNo1,
+    surname: surname1,
+    name: name1,
+    bs: bs1,
+    year: year1
+}));
 
-    updatePromises.push(updateDoc(roomDocRef2,{
-        room: room2,
-        floor: floor2,
-        block: block2,
-        studentNo: studentNo2,
-        surname: surname2,
-        name: name2,
-        bs: bs2,
-        year: year2
-    }));
+updatePromises.push(updateDoc(roomDocRef2,{
+    room: room2,
+    floor: floor2,
+    block: block2,
+    studentNo: studentNo2,
+    surname: surname2,
+    name: name2,
+    bs: bs2,
+    year: year2
+}));
 
-    updatePromises.push(updateDoc(roomDocRef3,{
-        room: room3,
-        floor: floor3,
-        block: block3,
-        studentNo: studentNo3,
-        surname: surname3,
-        name: name3,
-        bs: bs3,
-        year: year3
-    }));
+updatePromises.push(updateDoc(roomDocRef3,{
+    room: room3,
+    floor: floor3,
+    block: block3,
+    studentNo: studentNo3,
+    surname: surname3,
+    name: name3,
+    bs: bs3,
+    year: year3
+}));
 
-    updatePromises.push(updateDoc(roomDocRef4,{
-        room: room4,
-        floor: floor4,
-        block: block4,
-        studentNo: studentNo4,
-        surname: surname4,
-        name: name4,
-        bs: bs4,
-        year: year4
-    }));
+updatePromises.push(updateDoc(roomDocRef4,{
+    room: room4,
+    floor: floor4,
+    block: block4,
+    studentNo: studentNo4,
+    surname: surname4,
+    name: name4,
+    bs: bs4,
+    year: year4
+}));
 
-    updatePromises.push(updateDoc(roomDocRef5,{
-        room: room5,
-        floor: floor5,
-        block: block5,
-        studentNo: studentNo5,
-        surname: surname5,
-        name: name5,
-        bs: bs5,
-        year: year5
-    }));
+updatePromises.push(updateDoc(roomDocRef5,{
+    room: room5,
+    floor: floor5,
+    block: block5,
+    studentNo: studentNo5,
+    surname: surname5,
+    name: name5,
+    bs: bs5,
+    year: year5
+}));
 
-    updatePromises.push(updateDoc(roomDocRef6,{
-        room: room6,
-        floor: floor6,
-        block: block6,
-        studentNo: studentNo6,
-        surname: surname6,
-        name: name6,
-        bs: bs6,
-        year: year6
-    }));
+updatePromises.push(updateDoc(roomDocRef6,{
+    room: room6,
+    floor: floor6,
+    block: block6,
+    studentNo: studentNo6,
+    surname: surname6,
+    name: name6,
+    bs: bs6,
+    year: year6
+}));
 
-    updatePromises.push(updateDoc(roomDocRef7,{
-        room: room7,
-        floor: floor7,
-        block: block7,
-        studentNo: studentNo7,
-        surname: surname7,
-        name: name7,
-        bs: bs7,
-        year: year7
-    }));
+updatePromises.push(updateDoc(roomDocRef7,{
+    room: room7,
+    floor: floor7,
+    block: block7,
+    studentNo: studentNo7,
+    surname: surname7,
+    name: name7,
+    bs: bs7,
+    year: year7
+}));
 
-    updatePromises.push(updateDoc(roomDocRef8,{
-        room: room8,
-        floor: floor8,
-        block: block8,
-        studentNo: studentNo8,
-        surname: surname8,
-        name: name8,
-        bs: bs8,
-        year: year8
-    }));
+updatePromises.push(updateDoc(roomDocRef8,{
+    room: room8,
+    floor: floor8,
+    block: block8,
+    studentNo: studentNo8,
+    surname: surname8,
+    name: name8,
+    bs: bs8,
+    year: year8
+}));
 
-    updatePromises.push(updateDoc(roomDocRef9,{
-        room: room9,
-        floor: floor9,
-        block: block9,
-        studentNo: studentNo9,
-        surname: surname9,
-        name: name9,
-        bs: bs9,
-        year: year9
-    }));
+updatePromises.push(updateDoc(roomDocRef9,{
+    room: room9,
+    floor: floor9,
+    block: block9,
+    studentNo: studentNo9,
+    surname: surname9,
+    name: name9,
+    bs: bs9,
+    year: year9
+}));
 
-    updatePromises.push(updateDoc(roomDocRef10,{
-        room: room10,
-        floor: floor10,
-        block: block10,
-        studentNo: studentNo10,
-        surname: surname10,
-        name: name10,
-        bs: bs10,
-        year: year10
-    }));
+updatePromises.push(updateDoc(roomDocRef10,{
+    room: room10,
+    floor: floor10,
+    block: block10,
+    studentNo: studentNo10,
+    surname: surname10,
+    name: name10,
+    bs: bs10,
+    year: year10
+}));
 
-    updatePromises.push(updateDoc(roomDocRef11,{
-        room: room11,
-        floor: floor11,
-        block: block11,
-        studentNo: studentNo11,
-        surname: surname11,
-        name: name11,
-        bs: bs11,
-        year: year11
-    }));
+updatePromises.push(updateDoc(roomDocRef11,{
+    room: room11,
+    floor: floor11,
+    block: block11,
+    studentNo: studentNo11,
+    surname: surname11,
+    name: name11,
+    bs: bs11,
+    year: year11
+}));
 
-    updatePromises.push(updateDoc(roomDocRef12,{
-        room: room12,
-        floor: floor12,
-        block: block12,
-        studentNo: studentNo12,
-        surname: surname12,
-        name: name12,
-        bs: bs12,
-        year: year12
-    }));
+updatePromises.push(updateDoc(roomDocRef12,{
+    room: room12,
+    floor: floor12,
+    block: block12,
+    studentNo: studentNo12,
+    surname: surname12,
+    name: name12,
+    bs: bs12,
+    year: year12
+}));
 
-    updatePromises.push(updateDoc(roomDocRef13,{
-        room: room13,
-        floor: floor13,
-        block: block13,
-        studentNo: studentNo13,
-        surname: surname13,
-        name: name13,
-        bs: bs13,
-        year: year13
-    }));
+updatePromises.push(updateDoc(roomDocRef13,{
+    room: room13,
+    floor: floor13,
+    block: block13,
+    studentNo: studentNo13,
+    surname: surname13,
+    name: name13,
+    bs: bs13,
+    year: year13
+}));
 
-    updatePromises.push(updateDoc(roomDocRef14,{
-        room: room14,
-        floor: floor14,
-        block: block14,
-        studentNo: studentNo14,
-        surname: surname14,
-        name: name14,
-        bs: bs14,
-        year: year14
-    }));
+updatePromises.push(updateDoc(roomDocRef14,{
+    room: room14,
+    floor: floor14,
+    block: block14,
+    studentNo: studentNo14,
+    surname: surname14,
+    name: name14,
+    bs: bs14,
+    year: year14
+}));
 
-    updatePromises.push(updateDoc(roomDocRef15,{
-        room: room15,
-        floor: floor15,
-        block: block15,
-        studentNo: studentNo15,
-        surname: surname15,
-        name: name15,
-        bs: bs15,
-        year: year15
-    }));
+updatePromises.push(updateDoc(roomDocRef15,{
+    room: room15,
+    floor: floor15,
+    block: block15,
+    studentNo: studentNo15,
+    surname: surname15,
+    name: name15,
+    bs: bs15,
+    year: year15
+}));
 
-    updatePromises.push(updateDoc(roomDocRef16,{
-        room: room16,
-        floor: floor16,
-        block: block16,
-        studentNo: studentNo16,
-        surname: surname16,
-        name: name16,
-        bs: bs16,
-        year: year16
-    }));
+updatePromises.push(updateDoc(roomDocRef16,{
+    room: room16,
+    floor: floor16,
+    block: block16,
+    studentNo: studentNo16,
+    surname: surname16,
+    name: name16,
+    bs: bs16,
+    year: year16
+}));
 
-    updatePromises.push(updateDoc(roomDocRef17,{
-        room: room17,
-        floor: floor17,
-        block: block17,
-        studentNo: studentNo17,
-        surname: surname17,
-        name: name17,
-        bs: bs17,
-        year: year17
-    }));
+updatePromises.push(updateDoc(roomDocRef17,{
+    room: room17,
+    floor: floor17,
+    block: block17,
+    studentNo: studentNo17,
+    surname: surname17,
+    name: name17,
+    bs: bs17,
+    year: year17
+}));
 
-    updatePromises.push(updateDoc(roomDocRef18,{
-        room: room18,
-        floor: floor18,
-        block: block18,
-        studentNo: studentNo18,
-        surname: surname18,
-        name: name18,
-        bs: bs18,
-        year: year18
-    }));
+updatePromises.push(updateDoc(roomDocRef18,{
+    room: room18,
+    floor: floor18,
+    block: block18,
+    studentNo: studentNo18,
+    surname: surname18,
+    name: name18,
+    bs: bs18,
+    year: year18
+}));
 
-    updatePromises.push(updateDoc(roomDocRef19,{
-        room: room19,
-        floor: floor19,
-        block: block19,
-        studentNo: studentNo19,
-        surname: surname19,
-        name: name19,
-        bs: bs19,
-        year: year19
-    }));
+updatePromises.push(updateDoc(roomDocRef19,{
+    room: room19,
+    floor: floor19,
+    block: block19,
+    studentNo: studentNo19,
+    surname: surname19,
+    name: name19,
+    bs: bs19,
+    year: year19
+}));
 
-    updatePromises.push(updateDoc(roomDocRef20,{
-        room: room20,
-        floor: floor20,
-        block: block20,
-        studentNo: studentNo20,
-        surname: surname20,
-        name: name20,
-        bs: bs20,
-        year: year20
-    }));
+updatePromises.push(updateDoc(roomDocRef20,{
+    room: room20,
+    floor: floor20,
+    block: block20,
+    studentNo: studentNo20,
+    surname: surname20,
+    name: name20,
+    bs: bs20,
+    year: year20
+}));
 
-    // Wait for all update promises to resolve
-    Promise.all(updatePromises)
-        .then(() => {
-            console.log("All documents successfully updated!");
+// Wait for all update promises to resolve
+Promise.all(updatePromises)
+    .then(() => {
+        console.log("All documents successfully updated!");
 
-            // After all updates are done, fetch documents again
-            getDocs(colRef)
-                .then((snapshot) => {
-                    let Residence = [];
-                    snapshot.docs.forEach((doc) => {
-                        Residence.push({ ...doc.data(), id: doc.id });
-                    });
-                    console.log(Residence);
-                    window.location.href = 'main.html';
-                })
-                .catch(err => {
-                    console.log(err.message);
+        // After all updates are done, fetch documents again
+        getDocs(colRef)
+            .then((snapshot) => {
+                let Residence = [];
+                snapshot.docs.forEach((doc) => {
+                    Residence.push({ ...doc.data(), id: doc.id });
                 });
-        })
-        .catch((error) => {
-            console.error("Error updating documents: ", error);
-        });
+                console.log(Residence);
+                    window.location.href = 'main.html';
+            })
+            .catch(err => {
+                console.log(err.message);
+            });
+    })
+    .catch((error) => {
+        console.error("Error updating documents: ", error);
+    });
 });
 
 
 //Stores data from the firebase to the textfields
-const docRef = doc(db, 'F1.Residence', 'roomNo');
-const docRef2 = doc(db, 'F1.Residence', 'roomNo2');
-const docRef3 = doc(db, 'F1.Residence', 'roomNo3');
-const docRef4 = doc(db, 'F1.Residence', 'roomNo4');
-const docRef5 = doc(db, 'F1.Residence', 'roomNo5');
-const docRef6 = doc(db, 'F1.Residence', 'roomNo6');
-const docRef7 = doc(db, 'F1.Residence', 'roomNo7');
-const docRef8 = doc(db, 'F1.Residence', 'roomNo8');
-const docRef9 = doc(db, 'F1.Residence', 'roomNo9');
-const docRef10 = doc(db, 'F1.Residence', 'roomNo10');
-const docRef11 = doc(db, 'F1.Residence', 'roomNo11');
-const docRef12 = doc(db, 'F1.Residence', 'roomNo12');
-const docRef13 = doc(db, 'F1.Residence', 'roomNo13');
-const docRef14 = doc(db, 'F1.Residence', 'roomNo14');
-const docRef15 = doc(db, 'F1.Residence', 'roomNo15');
-const docRef16 = doc(db, 'F1.Residence', 'roomNo16');
-const docRef17 = doc(db, 'F1.Residence', 'roomNo17');
-const docRef18 = doc(db, 'F1.Residence', 'roomNo18');
-const docRef19 = doc(db, 'F1.Residence', 'roomNo19');
-const docRef20 = doc(db, 'F1.Residence', 'roomNo20');
+const docRef = doc(db, 'NewFemale.Residence', 'roomNo');
+const docRef2 = doc(db, 'NewFemale.Residence', 'roomNo2');
+const docRef3 = doc(db, 'NewFemale.Residence', 'roomNo3');
+const docRef4 = doc(db, 'NewFemale.Residence', 'roomNo4');
+const docRef5 = doc(db, 'NewFemale.Residence', 'roomNo5');
+const docRef6 = doc(db, 'NewFemale.Residence', 'roomNo6');
+const docRef7 = doc(db, 'NewFemale.Residence', 'roomNo7');
+const docRef8 = doc(db, 'NewFemale.Residence', 'roomNo8');
+const docRef9 = doc(db, 'NewFemale.Residence', 'roomNo9');
+const docRef10 = doc(db, 'NewFemale.Residence', 'roomNo10');
+const docRef11 = doc(db, 'NewFemale.Residence', 'roomNo11');
+const docRef12 = doc(db, 'NewFemale.Residence', 'roomNo12');
+const docRef13 = doc(db, 'NewFemale.Residence', 'roomNo13');
+const docRef14 = doc(db, 'NewFemale.Residence', 'roomNo14');
+const docRef15 = doc(db, 'NewFemale.Residence', 'roomNo15');
+const docRef16 = doc(db, 'NewFemale.Residence', 'roomNo16');
+const docRef17 = doc(db, 'NewFemale.Residence', 'roomNo17');
+const docRef18 = doc(db, 'NewFemale.Residence', 'roomNo18');
+const docRef19 = doc(db, 'NewFemale.Residence', 'roomNo19');
+const docRef20 = doc(db, 'NewFemale.Residence', 'roomNo20');
 
 
 onSnapshot(docRef, (doc)=>{

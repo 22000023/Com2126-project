@@ -1,0 +1,740 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DBSA-Male Room Allocation</title>
+    <link rel="stylesheet" href="resPageDesign.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="OIP.jpeg" alt="University of venda logo">
+        </div>
+
+        <div class="btn">
+            <button>Allocate</button>
+        </div>
+
+    </header>
+
+    <div class="ResTitle">
+        <h2>DBSA-Male Residence </h2>
+    </div>
+
+    <!-- for header or title -->
+    <div class="table">
+        <div class="cell lowerSize">
+            <h1>Room </h1>
+        </div>
+        <div class="cell lowerSize">
+            <h1>Floor</h1>
+        </div>
+        <div class="cell lowerSize">
+            <h1>Block </h1>
+        </div>
+        <div class="cell">
+            <h1>Student No. </h1>
+        </div>
+        <div class="cell">
+            <h1>Surname</h1>
+        </div>
+        <div class="cell">
+            <h1>Name(s)</h1>
+        </div>
+        <div class="cell">
+            <h1>Bursary/Sponsor</h1>
+        </div>
+        <div class="cell">
+            <h1>Period</h1>
+        </div>
+
+        <div class="cell lowerSize " id="room1">1</div>
+        <div class="cell lowerSize " id="floor1">1</div>
+        <div class="cell lowerSize " id="block1">1</div>
+        <input type="text" class="cell " id="studentNo1">
+        <input type="text" class="cell " id="surname1">
+        <input type="text" class="cell " id="name1">
+        <select class="cell dropdown" id="bs1">
+            <option value="nsfas">Funded by NSFAS</option>
+            <option value="private">Private Sponsor</option>
+            <option value="self">Self Funded</option>
+        </select>
+        <select class="cell dropdown" id="year1">
+            <option value="full">Full year</option>
+            <option value="one semester">One Semester</option>
+            <option value="temporary">Temporary</option>
+        </select>
+
+        <div class="cell lowerSize " id="room2">2</div>
+        <div class="cell lowerSize " id="floor2">1</div>
+        <div class="cell lowerSize " id="block2">1</div>
+        <input type="text" class="cell " id="studentNo2">
+        <input type="text" class="cell " id="surname2">
+        <input type="text" class="cell " id="name2">
+        <select class="cell dropdown" id="bs2">
+            <option value="nsfas">Funded by NSFAS</option>
+            <option value="private">Private Sponsor</option>
+            <option value="self">Self Funded</option>
+        </select>
+        <select class="cell dropdown" id="year2">
+            <option value="full">Full year</option>
+            <option value="semester">One Semester</option>
+            <option value="temporary">Temporary</option>
+        </select>
+
+        <div class="cell lowerSize " id="room3">3</div>
+        <div class="cell lowerSize " id="floor3">1</div>
+        <div class="cell lowerSize " id="block3">1</div>
+        <input type="text" class="cell " id="studentNo3">
+        <input type="text" class="cell " id="surname3">
+        <input type="text" class="cell " id="name3">
+        <select class="cell dropdown" id="bs3">
+            <option value="nsfas">Funded by NSFAS</option>
+            <option value="private">Private Sponsor</option>
+            <option value="self">Self Funded</option>
+        </select>
+        <select class="cell dropdown" id="year3">
+            <option value="full">Full year</option>
+            <option value="semester">One Semester</option>
+            <option value="temporary">Temporary</option>
+        </select>
+
+        <div class="cell lowerSize " id="room4">4</div>
+        <div class="cell lowerSize " id="floor4">1</div>
+        <div class="cell lowerSize " id="block4">1</div>
+        <input type="text" class="cell " id="studentNo4">
+        <input type="text" class="cell " id="surname4">
+        <input type="text" class="cell " id="name4">
+        <select class="cell dropdown" id="bs4">
+            <option value="nsfas">Funded by NSFAS</option>
+            <option value="private">Private Sponsor</option>
+            <option value="self">Self Funded</option>
+        </select>
+        <select class="cell dropdown" id="year4">
+            <option value="full">Full year</option>
+            <option value="semester">One Semester</option>
+            <option value="temporary">Temporary</option>
+        </select>
+
+        <div class="cell lowerSize " id="room5">5</div>
+        <div class="cell lowerSize " id="floor5">1</div>
+        <div class="cell lowerSize " id="block5">1</div>
+        <input type="text" class="cell " id="studentNo5">
+        <input type="text" class="cell " id="surname5">
+        <input type="text" class="cell " id="name5">
+        <select class="cell dropdown" id="bs5">
+            <option value="nsfas">Funded by NSFAS</option>
+            <option value="private">Private Sponsor</option>
+            <option value="self">Self Funded</option>
+        </select>
+        <select class="cell dropdown" id="year5">
+            <option value="full">Full year</option>
+            <option value="semester">One Semester</option>
+            <option value="temporary">Temporary</option>
+        </select>
+
+        <div class="cell lowerSize " id="room6">6</div>
+        <div class="cell lowerSize " id="floor6">1</div>
+        <div class="cell lowerSize " id="block6">1</div>
+        <input type="text" class="cell " id="studentNo6">
+        <input type="text" class="cell " id="surname6">
+        <input type="text" class="cell " id="name6">
+        <select class="cell dropdown" id="bs6">
+            <option value="nsfas">Funded by NSFAS</option>
+            <option value="private">Private Sponsor</option>
+            <option value="self">Self Funded</option>
+        </select>
+        <select class="cell dropdown" id="year6">
+            <option value="full">Full year</option>
+            <option value="semester">One Semester</option>
+            <option value="temporary">Temporary</option>
+        </select>
+
+        <div class="cell lowerSize " id="room7">7</div>
+        <div class="cell lowerSize " id="floor7">1</div>
+        <div class="cell lowerSize " id="block7">1</div>
+        <input type="text" class="cell " id="studentNo7">
+        <input type="text" class="cell " id="surname7">
+        <input type="text" class="cell " id="name7">
+        <select class="cell dropdown" id="bs7">
+            <option value="nsfas">Funded by NSFAS</option>
+            <option value="private">Private Sponsor</option>
+            <option value="self">Self Funded</option>
+        </select>
+        <select class="cell dropdown" id="year7">
+            <option value="full">Full year</option>
+            <option value="semester">One Semester</option>
+            <option value="temporary">Temporary</option>
+        </select>
+
+        <div class="cell lowerSize " id="room8">8</div>
+        <div class="cell lowerSize " id="floor8">1</div>
+        <div class="cell lowerSize " id="block8">1</div>
+        <input type="text" class="cell " id="studentNo8">
+        <input type="text" class="cell " id="surname8">
+        <input type="text" class="cell " id="name8">
+        <select class="cell dropdown" id="bs8">
+            <option value="nsfas">Funded by NSFAS</option>
+            <option value="private">Private Sponsor</option>
+            <option value="self">Self Funded</option>
+        </select>
+        <select class="cell dropdown" id="year8">
+            <option value="full">Full year</option>
+            <option value="semester">One Semester</option>
+            <option value="temporary">Temporary</option>
+        </select>
+
+        <div class="cell lowerSize " id="room9">9</div>
+        <div class="cell lowerSize " id="floor9">1</div>
+        <div class="cell lowerSize " id="block9">1</div>
+        <input type="text" class="cell " id="studentNo9">
+        <input type="text" class="cell " id="surname9">
+        <input type="text" class="cell " id="name9">
+        <select class="cell dropdown" id="bs9">
+            <option value="nsfas">Funded by NSFAS</option>
+            <option value="private">Private Sponsor</option>
+            <option value="self">Self Funded</option>
+        </select>
+        <select class="cell dropdown" id="year9">
+            <option value="full">Full year</option>
+            <option value="semester">One Semester</option>
+            <option value="temporary">Temporary</option>
+        </select>
+
+        <div class="cell lowerSize " id="room10">10</div>
+        <div class="cell lowerSize " id="floor10">1</div>
+        <div class="cell lowerSize " id="block10">1</div>
+        <input type="text" class="cell " id="studentNo10">
+        <input type="text" class="cell " id="surname10">
+        <input type="text" class="cell " id="name10">
+        <select class="cell dropdown" id="bs10">
+            <option value="nsfas">Funded by NSFAS</option>
+            <option value="private">Private Sponsor</option>
+            <option value="self">Self Funded</option>
+        </select>
+        <select class="cell dropdown" id="year10">
+            <option value="full">Full year</option>
+            <option value="semester">One Semester</option>
+            <option value="temporary">Temporary</option>
+        </select>
+
+        <div class="cell lowerSize " id="room11">11</div>
+        <div class="cell lowerSize " id="floor11">1</div>
+        <div class="cell lowerSize " id="block11">1</div>
+        <input type="text" class="cell " id="studentNo11">
+        <input type="text" class="cell " id="surname11">
+        <input type="text" class="cell " id="name11">
+        <select class="cell dropdown" id="bs11">
+            <option value="nsfas">Funded by NSFAS</option>
+            <option value="private">Private Sponsor</option>
+            <option value="self">Self Funded</option>
+        </select>
+        <select class="cell dropdown" id="year11">
+            <option value="full">Full year</option>
+            <option value="semester">One Semester</option>
+            <option value="temporary">Temporary</option>
+        </select>
+
+        <div class="cell lowerSize " id="room12">12</div>
+        <div class="cell lowerSize " id="floor12">1</div>
+        <div class="cell lowerSize " id="block12">1</div>
+        <input type="text" class="cell " id="studentNo12">
+        <input type="text" class="cell " id="surname12">
+        <input type="text" class="cell " id="name12">
+        <select class="cell dropdown" id="bs12">
+            <option value="nsfas">Funded by NSFAS</option>
+            <option value="private">Private Sponsor</option>
+            <option value="self">Self Funded</option>
+        </select>
+        <select class="cell dropdown" id="year12">
+            <option value="full">Full year</option>
+            <option value="semester">One Semester</option>
+            <option value="temporary">Temporary</option>
+        </select>
+
+        <div class="cell lowerSize " id="room13">13</div>
+        <div class="cell lowerSize " id="floor13">1</div>
+        <div class="cell lowerSize " id="block13">1</div>
+        <input type="text" class="cell " id="studentNo13">
+        <input type="text" class="cell " id="surname13">
+        <input type="text" class="cell " id="name13">
+        <select class="cell dropdown" id="bs13">
+            <option value="nsfas">Funded by NSFAS</option>
+            <option value="private">Private Sponsor</option>
+            <option value="self">Self Funded</option>
+        </select>
+        <select class="cell dropdown" id="year13">
+            <option value="full">Full year</option>
+            <option value="semester">One Semester</option>
+            <option value="temporary">Temporary</option>
+        </select>
+
+        <div class="cell lowerSize " id="room14">14</div>
+        <div class="cell lowerSize " id="floor14">1</div>
+        <div class="cell lowerSize " id="block14">1</div>
+        <input type="text" class="cell " id="studentNo14">
+        <input type="text" class="cell " id="surname14">
+        <input type="text" class="cell " id="name14">
+        <select class="cell dropdown" id="bs14">
+            <option value="nsfas">Funded by NSFAS</option>
+            <option value="private">Private Sponsor</option>
+            <option value="self">Self Funded</option>
+        </select>
+        <select class="cell dropdown" id="year14">
+            <option value="full">Full year</option>
+            <option value="semester">One Semester</option>
+            <option value="temporary">Temporary</option>
+        </select>
+
+        <div class="cell lowerSize " id="room15">15</div>
+        <div class="cell lowerSize " id="floor15">1</div>
+        <div class="cell lowerSize " id="block15">1</div>
+        <input type="text" class="cell " id="studentNo15">
+        <input type="text" class="cell " id="surname15">
+        <input type="text" class="cell " id="name15">
+        <select class="cell dropdown" id="bs15">
+            <option value="nsfas">Funded by NSFAS</option>
+            <option value="private">Private Sponsor</option>
+            <option value="self">Self Funded</option>
+        </select>
+        <select class="cell dropdown" id="year15">
+            <option value="full">Full year</option>
+            <option value="semester">One Semester</option>
+            <option value="temporary">Temporary</option>
+        </select>
+
+        <div class="cell lowerSize " id="room16">16</div>
+        <div class="cell lowerSize " id="floor16">1</div>
+        <div class="cell lowerSize " id="block16">1</div>
+        <input type="text" class="cell " id="studentNo16">
+        <input type="text" class="cell " id="surname16">
+        <input type="text" class="cell " id="name16">
+        <select class="cell dropdown" id="bs16">
+            <option value="nsfas">Funded by NSFAS</option>
+            <option value="private">Private Sponsor</option>
+            <option value="self">Self Funded</option>
+        </select>
+        <select class="cell dropdown" id="year16">
+            <option value="full">Full year</option>
+            <option value="semester">One Semester</option>
+            <option value="temporary">Temporary</option>
+        </select>
+
+        <div class="cell lowerSize " id="room17">17</div>
+        <div class="cell lowerSize " id="floor17">1</div>
+        <div class="cell lowerSize " id="block17">1</div>
+        <input type="text" class="cell " id="studentNo17">
+        <input type="text" class="cell " id="surname17">
+        <input type="text" class="cell " id="name17">
+        <select class="cell dropdown" id="bs17">
+            <option value="nsfas">Funded by NSFAS</option>
+            <option value="private">Private Sponsor</option>
+            <option value="self">Self Funded</option>
+        </select>
+        <select class="cell dropdown" id="year17">
+            <option value="full">Full year</option>
+            <option value="semester">One Semester</option>
+            <option value="temporary">Temporary</option>
+        </select>
+
+        <div class="cell lowerSize " id="room18">18</div>
+        <div class="cell lowerSize " id="floor18">1</div>
+        <div class="cell lowerSize " id="block18">1</div>
+        <input type="text" class="cell " id="studentNo18">
+        <input type="text" class="cell " id="surname18">
+        <input type="text" class="cell " id="name18">
+        <select class="cell dropdown" id="bs18">
+            <option value="nsfas">Funded by NSFAS</option>
+            <option value="private">Private Sponsor</option>
+            <option value="self">Self Funded</option>
+        </select>
+        <select class="cell dropdown" id="year18">
+            <option value="full">Full year</option>
+            <option value="semester">One Semester</option>
+            <option value="temporary">Temporary</option>
+        </select>
+
+        <div class="cell lowerSize " id="room19">19</div>
+        <div class="cell lowerSize " id="floor19">1</div>
+        <div class="cell lowerSize " id="block19">1</div>
+        <input type="text" class="cell " id="studentNo19">
+        <input type="text" class="cell " id="surname19">
+        <input type="text" class="cell " id="name19">
+        <select class="cell dropdown" id="bs19">
+            <option value="nsfas">Funded by NSFAS</option>
+            <option value="private">Private Sponsor</option>
+            <option value="self">Self Funded</option>
+        </select>
+        <select class="cell dropdown" id="year19">
+            <option value="full">Full year</option>
+            <option value="semester">One Semester</option>
+            <option value="temporary">Temporary</option>
+        </select>
+
+        <div class="cell lowerSize " id="room20">20</div>
+        <div class="cell lowerSize " id="floor20">1</div>
+        <div class="cell lowerSize " id="block20">1</div>
+        <input type="text" class="cell " id="studentNo20">
+        <input type="text" class="cell " id="surname20">
+        <input type="text" class="cell " id="name20">
+        <select class="cell dropdown" id="bs20">
+            <option value="nsfas">Funded by NSFAS</option>
+            <option value="private">Private Sponsor</option>
+            <option value="self">Self Funded</option>
+        </select>
+        <select class="cell dropdown" id="year20">
+            <option value="full">Full year</option>
+            <option value="semester">One Semester</option>
+            <option value="temporary">Temporary</option>
+        </select>
+
+        <div class="cell lowerSize " id="room21">21</div>
+        <div class="cell lowerSize " id="floor21">2</div>
+        <div class="cell lowerSize " id="block21">1</div>
+        <input type="text" class="cell " id="studentNo21">
+        <input type="text" class="cell " id="surname21">
+        <input type="text" class="cell " id="name21">
+        <select class="cell dropdown" id="bs21">
+            <option value="nsfas">Funded by NSFAS</option>
+            <option value="private">Private Sponsor</option>
+            <option value="self">Self Funded</option>
+        </select>
+        <select class="cell dropdown" id="year21">
+            <option value="full">Full year</option>
+            <option value="semester">One Semester</option>
+            <option value="temporary">Temporary</option>
+        </select>
+
+        <div class="cell lowerSize " id="room22">22</div>
+        <div class="cell lowerSize " id="floor22">2</div>
+        <div class="cell lowerSize " id="block22">1</div>
+        <input type="text" class="cell " id="studentNo22">
+        <input type="text" class="cell " id="surname22">
+        <input type="text" class="cell " id="name22">
+        <select class="cell dropdown" id="bs22">
+            <option value="nsfas">Funded by NSFAS</option>
+            <option value="private">Private Sponsor</option>
+            <option value="self">Self Funded</option>
+        </select>
+        <select class="cell dropdown" id="year22">
+            <option value="full">Full year</option>
+            <option value="semester">One Semester</option>
+            <option value="temporary">Temporary</option>
+        </select>
+
+        <div class="cell lowerSize " id="room23">23</div>
+        <div class="cell lowerSize " id="floor23">2</div>
+        <div class="cell lowerSize " id="block23">1</div>
+        <input type="text" class="cell " id="studentNo23">
+        <input type="text" class="cell " id="surname23">
+        <input type="text" class="cell " id="name23">
+        <select class="cell dropdown" id="bs23">
+            <option value="nsfas">Funded by NSFAS</option>
+            <option value="private">Private Sponsor</option>
+            <option value="self">Self Funded</option>
+        </select>
+        <select class="cell dropdown" id="year23">
+            <option value="full">Full year</option>
+            <option value="semester">One Semester</option>
+            <option value="temporary">Temporary</option>
+        </select>
+
+        <div class="cell lowerSize " id="room24">24</div>
+        <div class="cell lowerSize " id="floor24">2</div>
+        <div class="cell lowerSize " id="block24">1</div>
+        <input type="text" class="cell " id="studentNo24">
+        <input type="text" class="cell " id="surname24">
+        <input type="text" class="cell " id="name24">
+        <select class="cell dropdown" id="bs24">
+            <option value="nsfas">Funded by NSFAS</option>
+            <option value="private">Private Sponsor</option>
+            <option value="self">Self Funded</option>
+        </select>
+        <select class="cell dropdown" id="year24">
+            <option value="full">Full year</option>
+            <option value="semester">One Semester</option>
+            <option value="temporary">Temporary</option>
+        </select>
+
+        <div class="cell lowerSize " id="room25">25</div>
+        <div class="cell lowerSize " id="floor25">2</div>
+        <div class="cell lowerSize " id="block25">1</div>
+        <input type="text" class="cell " id="studentNo25">
+        <input type="text" class="cell " id="surname25">
+        <input type="text" class="cell " id="name25">
+        <select class="cell dropdown" id="bs25">
+            <option value="nsfas">Funded by NSFAS</option>
+            <option value="private">Private Sponsor</option>
+            <option value="self">Self Funded</option>
+        </select>
+        <select class="cell dropdown" id="year25">
+            <option value="full">Full year</option>
+            <option value="semester">One Semester</option>
+            <option value="temporary">Temporary</option>
+        </select>
+
+        <div class="cell lowerSize " id="room26">26</div>
+        <div class="cell lowerSize " id="floor26">2</div>
+        <div class="cell lowerSize " id="block26">1</div>
+        <input type="text" class="cell " id="studentNo26">
+        <input type="text" class="cell " id="surname26">
+        <input type="text" class="cell " id="name26">
+        <select class="cell dropdown" id="bs26">
+            <option value="nsfas">Funded by NSFAS</option>
+            <option value="private">Private Sponsor</option>
+            <option value="self">Self Funded</option>
+        </select>
+        <select class="cell dropdown" id="year26">
+            <option value="full">Full year</option>
+            <option value="semester">One Semester</option>
+            <option value="temporary">Temporary</option>
+        </select>
+
+        <div class="cell lowerSize " id="room27">27</div>
+        <div class="cell lowerSize " id="floor27">2</div>
+        <div class="cell lowerSize " id="block27">1</div>
+        <input type="text" class="cell " id="studentNo27">
+        <input type="text" class="cell " id="surname27">
+        <input type="text" class="cell " id="name27">
+        <select class="cell dropdown" id="bs27">
+            <option value="nsfas">Funded by NSFAS</option>
+            <option value="private">Private Sponsor</option>
+            <option value="self">Self Funded</option>
+        </select>
+        <select class="cell dropdown" id="year27">
+            <option value="full">Full year</option>
+            <option value="semester">One Semester</option>
+            <option value="temporary">Temporary</option>
+        </select>
+
+        <div class="cell lowerSize " id="room28">28</div>
+        <div class="cell lowerSize " id="floor28">2</div>
+        <div class="cell lowerSize " id="block28">1</div>
+        <input type="text" class="cell " id="studentNo28">
+        <input type="text" class="cell " id="surname28">
+        <input type="text" class="cell " id="name28">
+        <select class="cell dropdown" id="bs28">
+            <option value="nsfas">Funded by NSFAS</option>
+            <option value="private">Private Sponsor</option>
+            <option value="self">Self Funded</option>
+        </select>
+        <select class="cell dropdown" id="year28">
+            <option value="full">Full year</option>
+            <option value="semester">One Semester</option>
+            <option value="temporary">Temporary</option>
+        </select>
+
+        <div class="cell lowerSize " id="room29">29</div>
+        <div class="cell lowerSize " id="floor29">2</div>
+        <div class="cell lowerSize " id="block29">1</div>
+        <input type="text" class="cell " id="studentNo29">
+        <input type="text" class="cell " id="surname29">
+        <input type="text" class="cell " id="name29">
+        <select class="cell dropdown" id="bs29">
+            <option value="nsfas">Funded by NSFAS</option>
+            <option value="private">Private Sponsor</option>
+            <option value="self">Self Funded</option>
+        </select>
+        <select class="cell dropdown" id="year29">
+            <option value="full">Full year</option>
+            <option value="semester">One Semester</option>
+            <option value="temporary">Temporary</option>
+        </select>
+
+        <div class="cell lowerSize " id="room30">30</div>
+        <div class="cell lowerSize " id="floor30">2</div>
+        <div class="cell lowerSize " id="block30">1</div>
+        <input type="text" class="cell " id="studentNo30">
+        <input type="text" class="cell " id="surname30">
+        <input type="text" class="cell " id="name30">
+        <select class="cell dropdown" id="bs30">
+            <option value="nsfas">Funded by NSFAS</option>
+            <option value="private">Private Sponsor</option>
+            <option value="self">Self Funded</option>
+        </select>
+        <select class="cell dropdown" id="year30">
+            <option value="full">Full year</option>
+            <option value="semester">One Semester</option>
+            <option value="temporary">Temporary</option>
+        </select>
+
+        <div class="cell lowerSize " id="room31">31</div>
+        <div class="cell lowerSize " id="floor31">2</div>
+        <div class="cell lowerSize " id="block31">1</div>
+        <input type="text" class="cell " id="studentNo31">
+        <input type="text" class="cell " id="surname31">
+        <input type="text" class="cell " id="name31">
+        <select class="cell dropdown" id="bs31">
+            <option value="nsfas">Funded by NSFAS</option>
+            <option value="private">Private Sponsor</option>
+            <option value="self">Self Funded</option>
+        </select>
+        <select class="cell dropdown" id="year31">
+            <option value="full">Full year</option>
+            <option value="semester">One Semester</option>
+            <option value="temporary">Temporary</option>
+        </select>
+
+        <div class="cell lowerSize " id="room32">32</div>
+        <div class="cell lowerSize " id="floor32">2</div>
+        <div class="cell lowerSize " id="block32">1</div>
+        <input type="text" class="cell " id="studentNo32">
+        <input type="text" class="cell " id="surname32">
+        <input type="text" class="cell " id="name32">
+        <select class="cell dropdown" id="bs32">
+            <option value="nsfas">Funded by NSFAS</option>
+            <option value="private">Private Sponsor</option>
+            <option value="self">Self Funded</option>
+        </select>
+        <select class="cell dropdown" id="year32">
+            <option value="full">Full year</option>
+            <option value="semester">One Semester</option>
+            <option value="temporary">Temporary</option>
+        </select>
+
+        <div class="cell lowerSize " id="room33">33</div>
+        <div class="cell lowerSize " id="floor33">2</div>
+        <div class="cell lowerSize " id="block33">1</div>
+        <input type="text" class="cell " id="studentNo33">
+        <input type="text" class="cell " id="surname33">
+        <input type="text" class="cell " id="name33">
+        <select class="cell dropdown" id="bs33">
+            <option value="nsfas">Funded by NSFAS</option>
+            <option value="private">Private Sponsor</option>
+            <option value="self">Self Funded</option>
+        </select>
+        <select class="cell dropdown" id="year33">
+            <option value="full">Full year</option>
+            <option value="semester">One Semester</option>
+            <option value="temporary">Temporary</option>
+        </select>
+
+        <div class="cell lowerSize " id="room34">34</div>
+        <div class="cell lowerSize " id="floor34">2</div>
+        <div class="cell lowerSize " id="block34">1</div>
+        <input type="text" class="cell " id="studentNo34">
+        <input type="text" class="cell " id="surname34">
+        <input type="text" class="cell " id="name34">
+        <select class="cell dropdown" id="bs34">
+            <option value="nsfas">Funded by NSFAS</option>
+            <option value="private">Private Sponsor</option>
+            <option value="self">Self Funded</option>
+        </select>
+        <select class="cell dropdown" id="year34">
+            <option value="full">Full year</option>
+            <option value="semester">One Semester</option>
+            <option value="temporary">Temporary</option>
+        </select>
+
+        <div class="cell lowerSize " id="room35">35</div>
+        <div class="cell lowerSize " id="floor35">2</div>
+        <div class="cell lowerSize " id="block35">1</div>
+        <input type="text" class="cell " id="studentNo35">
+        <input type="text" class="cell " id="surname35">
+        <input type="text" class="cell " id="name35">
+        <select class="cell dropdown" id="bs35">
+            <option value="nsfas">Funded by NSFAS</option>
+            <option value="private">Private Sponsor</option>
+            <option value="self">Self Funded</option>
+        </select>
+        <select class="cell dropdown" id="year35">
+            <option value="full">Full year</option>
+            <option value="semester">One Semester</option>
+            <option value="temporary">Temporary</option>
+        </select>
+
+        <div class="cell lowerSize " id="room36">36</div>
+        <div class="cell lowerSize " id="floor36">2</div>
+        <div class="cell lowerSize " id="block36">1</div>
+        <input type="text" class="cell " id="studentNo36">
+        <input type="text" class="cell " id="surname36">
+        <input type="text" class="cell " id="name36">
+        <select class="cell dropdown" id="bs36">
+            <option value="nsfas">Funded by NSFAS</option>
+            <option value="private">Private Sponsor</option>
+            <option value="self">Self Funded</option>
+        </select>
+        <select class="cell dropdown" id="year36">
+            <option value="full">Full year</option>
+            <option value="semester">One Semester</option>
+            <option value="temporary">Temporary</option>
+        </select>
+
+        <div class="cell lowerSize " id="room37">37</div>
+        <div class="cell lowerSize " id="floor37">2</div>
+        <div class="cell lowerSize " id="block37">1</div>
+        <input type="text" class="cell " id="studentNo37">
+        <input type="text" class="cell " id="surname37">
+        <input type="text" class="cell " id="name37">
+        <select class="cell dropdown" id="bs37">
+            <option value="nsfas">Funded by NSFAS</option>
+            <option value="private">Private Sponsor</option>
+            <option value="self">Self Funded</option>
+        </select>
+        <select class="cell dropdown" id="year37">
+            <option value="full">Full year</option>
+            <option value="semester">One Semester</option>
+            <option value="temporary">Temporary</option>
+        </select>
+
+        <div class="cell lowerSize " id="room38">38</div>
+        <div class="cell lowerSize " id="floor38">2</div>
+        <div class="cell lowerSize " id="block38">1</div>
+        <input type="text" class="cell " id="studentNo38">
+        <input type="text" class="cell " id="surname38">
+        <input type="text" class="cell " id="name38">
+        <select class="cell dropdown" id="bs38">
+            <option value="nsfas">Funded by NSFAS</option>
+            <option value="private">Private Sponsor</option>
+            <option value="self">Self Funded</option>
+        </select>
+        <select class="cell dropdown" id="year38">
+            <option value="full">Full year</option>
+            <option value="semester">One Semester</option>
+            <option value="temporary">Temporary</option>
+        </select>
+
+        <div class="cell lowerSize " id="room39">39</div>
+        <div class="cell lowerSize " id="floor39">2</div>
+        <div class="cell lowerSize " id="block39">1</div>
+        <input type="text" class="cell " id="studentNo39">
+        <input type="text" class="cell " id="surname39">
+        <input type="text" class="cell " id="name39">
+        <select class="cell dropdown" id="bs39">
+            <option value="nsfas">Funded by NSFAS</option>
+            <option value="private">Private Sponsor</option>
+            <option value="self">Self Funded</option>
+        </select>
+        <select class="cell dropdown" id="year39">
+            <option value="full">Full year</option>
+            <option value="semester">One Semester</option>
+            <option value="temporary">Temporary</option>
+        </select>
+
+        <div class="cell lowerSize " id="room40">40</div>
+        <div class="cell lowerSize " id="floor40">2</div>
+        <div class="cell lowerSize " id="block40">1</div>
+        <input type="text" class="cell " id="studentNo40">
+        <input type="text" class="cell " id="surname40">
+        <input type="text" class="cell " id="name40">
+        <select class="cell dropdown" id="bs40">
+            <option value="nsfas">Funded by NSFAS</option>
+            <option value="private">Private Sponsor</option>
+            <option value="self">Self Funded</option>
+        </select>
+        <select class="cell dropdown" id="year40">
+            <option value="full">Full year</option>
+            <option value="semester">One Semester</option>
+            <option value="temporary">Temporary</option>
+        </select>
+
+    </div>
+
+
+    <script src="dbsamale.bundle.js"></script>
+</body>
+
+</html>
