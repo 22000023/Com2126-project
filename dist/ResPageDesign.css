@@ -81,7 +81,7 @@ nav {
     display: flex;
     font-size: 18px;
     justify-content: center;
-    align-self: center;
+    align-items: center;
     margin-top: 50px;
     text-decoration-line: underline;
 }
