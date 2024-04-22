@@ -1,4 +1,4 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -28,6 +28,7 @@ body{
     align-items: center;
     justify-content: center;
     font-family: Arial, sans-serif;
+    color: var(--text-color);
 }
 
 .container{
@@ -47,9 +48,8 @@ h1{
 .login{
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-    height: 500px;
+    height: 520px;
     width: 400px;
     border: 2px solid rgba(255, 255, 255, 0.5);
     backdrop-filter: blur(10px);
@@ -60,9 +60,12 @@ h1{
 }
 
 #image {
+    display: flex;
     width: 200px;
     height: auto;
     margin: 0;
+    padding-top: 20px;
+    padding-bottom: 50px;
 }
 
 .inputBox,
@@ -80,4 +83,36 @@ h1{
     border-radius: 30px;
     padding-left: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, .5);
+}
+
+.btn button{
+    font-size: 16px;
+    display: flex;
+    height: 50px;
+    width: 300px;
+    border: none;
+    outline-color: var(--header-color);
+    border-radius: 30px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: var(--tran-04);
+}
+
+
+.btn button:hover{
+    background-color: var(--navbar-color);
+    font-size: 20px;
+    font-weight: 500;
+    color: var(--text-color-secondary);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.error{
+    display: flex;
+    font-size: 16px;
+    margin-bottom: 20px;
+    color: red;
 }
