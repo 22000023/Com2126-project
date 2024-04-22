@@ -66,6 +66,7 @@ h1{
     margin: 0;
     padding-top: 20px;
     padding-bottom: 50px;
+    background-color: white;
 }
 
 .inputBox,
@@ -115,4 +116,8 @@ h1{
     font-size: 16px;
     margin-bottom: 20px;
     color: red;
+}
+
+input[type="password"]::-ms-reveal{
+    margin-right: 15px;
 }
