@@ -37,15 +37,15 @@ header {
     align-items: center;
     justify-content: space-between;
     padding: 10px 20px;
-    height: 70px;
+    height: 50px;
     background-color: var(--navbar-color);
 }
 
 .logo {
     display: flex;
     flex: 0 0 auto;
-    height: 60px;
-    margin-right: 20px; /* Adjust as needed */
+    height: 40px;
+    margin-right: 20px;
 }
 
 nav {
@@ -58,26 +58,19 @@ nav {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 0;
-    font-size: 18px;
-    background-color: var(--header-color);
-    color: var(--text-color-secondary);
-    border: none;
-    border-radius: 60px;
-    width: 100px;
-    height: 40px;
-    cursor: pointer;
     outline: none;
+    border: none;
+    height: 28px;
+    width: 60px;
+    border-radius: 20px;
+    background-color: var(--background-color);
+    font-size: 13px;
+    border: 1px solid rgba(0, 0, 0, 0.5);
     transition: var(--tran-04);
     box-shadow: 0 10px 50px rgba(255, 255, 255, .9);
 }
 
 .btn button:hover{
-    background-color: var(--background-color);
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: 600;
-    font-size: 18px;
-    color: var(--text-color);
 }
 
 .menu {
