@@ -31,71 +31,53 @@ body{
 }
 
 .container{
-    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 h1{
+    font-size: 20px;
     color: var(--header-color);
+    position: relative;
     padding-bottom: 25px;
-    font-size: 28px;
-    text-align: center;
 }
 
 .login{
-  min-height: 600px;
-  min-width: 450px;
-  border: 2px solid rgba(255, 255, 255, 0.5);
-  backdrop-filter: blur(10px);
-  background-color: transparent;
-  border-radius: 15px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, .2);
-  justify-content: center;
-  align-content: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+    width: 400px;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(10px);
+    background-color: transparent;
+    border-radius: 25px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+    margin: 0;
 }
 
-.error{
-    display: flex;
-    margin-top: 20px;
-    margin-left: 40px;
-    font-size: 20px;
-    color: red;
+#image {
+    width: 200px;
+    height: auto;
+    margin: 0;
 }
 
 .inputBox,
 .btn{
-    padding-top: 30px;
+    padding-bottom: 20px;
 }
 
 .layoutsize{
-    font-size: 18px;
+    font-size: 16px;
     display: flex;
-    margin: 0 35px ;
-    height: 60px;
-    max-width: 400px;
-    width: 95%;
+    height: 50px;
+    width: 300px;
     border: none;
     outline-color: var(--header-color);
-    border-radius: 60px;
+    border-radius: 30px;
     padding-left: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, .5);
-}
-
-.btn button{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 0;
-    font-size: 18px;
-}
-
-.btn button:hover{
-    background-color: var(--navbar-color);
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: 600;
-    font-size: 20px;
-    color: var(--background-color);
-}
-
-input[type="password"]::-ms-reveal{
-    margin-right: 15px;
 }
