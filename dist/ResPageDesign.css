@@ -7,9 +7,6 @@
 :root{
   --navbar-color: #87CEEB;
   --background-color: white;
-  --group1-color: white;
-  --group2-color: white;
-  --group3-color: white;
   --text-color: black;
   --header-color: #1f6dca;
   --primary-color: #008080;
@@ -23,8 +20,8 @@
 }
 
 body{
-    display: flex;
     height: 100vh;
+    padding-top: 20px;
 }
 
 header {
@@ -37,77 +34,55 @@ header {
     align-items: center;
     justify-content: space-between;
     padding: 10px 20px;
-    height: 70px;
+    height: 50px;
     background-color: var(--navbar-color);
 }
 
 .logo {
     display: flex;
     flex: 0 0 auto;
-    height: 60px;
-    margin-right: 20px; /* Adjust as needed */
+    height: 40px;
+    margin-right: 20px;
 }
 
 nav {
-    flex: 1;
     text-align: center;
-    font-size: 20px;
-}
-
-nav ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-nav ul li {
-    display: inline;
-    margin-right: 20px; /* Adjust as needed */
-}
-
-nav ul li:last-child {
-    margin-right: 0;
-}
-
-a{
-    color: var(--text-color);
-}
-
-a:hover{
-    color: var(--text-color-secondary);
+    font-size: 16px;
+    text-decoration: underline;
 }
 
 .btn button {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 0;
-    font-size: 18px;
+    outline: none;
+    border: none;
+    height: 28px;
+    width: 60px;
+    border-radius: 20px;
     background-color: var(--header-color);
     color: var(--text-color-secondary);
-    border: none;
-    border-radius: 60px;
-    width: 100px;
-    height: 40px;
+    font-size: 11px;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    transition: var(--tran-04);
+    box-shadow: 0 10px 50px rgba(255, 255, 255, .9);
     cursor: pointer;
-    outline: none;
-    transition: var(--tran-05);
-     box-shadow: 0 10px 50px rgba(255, 255, 255, .9);
 }
 
 .btn button:hover{
     background-color: var(--background-color);
     font-family: Arial, Helvetica, sans-serif;
-    font-weight: 600;
-    font-size: 18px;
+    font-weight: 00;
+    font-size: 12px;
     color: var(--text-color);
 }
 
 .ResTitle{
     display: flex;
+    font-size: 18px;
     justify-content: center;
     align-self: center;
-    margin-top: 85px;
+    margin-top: 50px;
     text-decoration-line: underline;
 }
 
@@ -116,39 +91,33 @@ a:hover{
     grid-template-columns: repeat(8, 1fr);
     gap: 10px;
     margin-top: 10px;
-    font-size: 18px;
-    padding: 20px;
+    font-size: 15px;
+    padding: 10px;
 }
 
 .table .lowerSize{
     flex-shrink: 1;
-    min-width: 60px;
+    min-width: 50px;
+    display: flex;
+    align-items: center;
 }
 
 h1,
 p{
-    font-size: 20px;
+    font-size: 15px;
     font-weight: bold;
 }
 
 
 .cell {
     display: flex;
-    font-size: 18px;
+    font-size: 15px;
     border: 1px solid #000;
-    padding: 5px;
+    align-items: center;
+    padding-left: 5px;
+    height: 30px;
 }
 
-#dropdown {
-    padding: 8px;
-    font-size: 16px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    outline: none; /* Remove default focus outline */
-}
-
-/* CSS for dropdown options */
-#dropdown option {
-    padding: 8px;
-    font-size: 80px;
+.dropdown {
+    font-size: 15px;
 }

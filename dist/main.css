@@ -7,9 +7,6 @@
 :root{
   --navbar-color: #87CEEB;
   --background-color: white;
-  --group1-color: white;
-  --group2-color: white;
-  --group3-color: white;
   --text-color: black;
   --header-color: #1f6dca;
   --primary-color: #008080;
@@ -50,7 +47,7 @@ header {
 
 nav {
     text-align: center;
-    font-size: 1vw;
+    font-size: 16px;
     text-decoration: underline;
 }
 
@@ -75,7 +72,7 @@ nav {
 .btn button:hover{
     background-color: var(--background-color);
     font-family: Arial, Helvetica, sans-serif;
-    font-weight: 600;
+    font-weight: 00;
     font-size: 12px;
     color: var(--text-color);
 }
@@ -85,12 +82,7 @@ nav {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, 1fr);
     gap: 30px;
-    max-width: 1800px;
-    margin: 0 auto;
-    padding: 20px;
-    height: 90vh;
-    align-content: center;
-    margin-top: 100px;
+    padding: 60px 20px;
 }
 
 .grid-section {
@@ -99,72 +91,32 @@ nav {
     border-radius: 20px;
     justify-content: space-between;
     box-shadow: 0 0 20px rgba(0, 0, 0, .2);
+    max-height: 300px;
 }
+
+.resNames{
+  padding-top: 20px;
+  padding-left: 5px;
+  color: var(--header-color);
+}
+
 .icon {
-    font-size: 24px;
     position: absolute;
-    right: 10px;
+    font-size: 20px;
+    right: 12px;
 }
 
-h1,
-h2{
-  color: var(--font-color);
-  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
-
-.boyIcon{
-  color: blue;
+h1{
+  font-size: 20px;
+  padding-left: 12px;
 }
 
 .femaleIcon{
   color: pink;
 }
 
-.F3 .icon,
-.F1 .icon,
-.F2 .icon,
-.F4 .icon,
-.F5 .icon{
-  padding-left: 200px;
-}
-
-h1{
-  padding: 16px;
-  padding-bottom: 0px;
-  font-size: 35px;
-  color: var(--link-text-color);
-}
-
-.resNames{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding-left: 20px;
-  padding-bottom: 2px;
-  border-radius: 20px;
-  background: var(--background-color);
-}
-
-.DBSA-male,
-.F4,
-.F3 {
-  background-color: var(--group1-color);
-}
-
-.DBSA-female,
-.F1,
-.F5 {
-  background-color: var(--group2-color);
-}
-
-.newFemale,
-.F2,
-.newMale{
-  background-color: var(--group3-color);
-}
-
 p{
-  font-size: 19px;
+  font-size: 15px;
   margin: 20px;
   padding: 5px 0;
   border-bottom: 1px solid var(--text-color);
@@ -175,15 +127,16 @@ p{
     justify-content: center;
     align-items: center;
     margin: 20px;
-    height: 50px;
+    height: 38px;
     background-color: transparent;
-    font-size: 18px;
+    font-size: 15px;
     padding-top: 2px;
     border-radius: 25px;
     box-shadow: 0 0 10px rgba(0, 0, 0, .2);
     border: none;
-    transition: all 0.3s; /* Add transition for smooth resizing */
-    min-width: 280px; /* Set initial minimum width */
+    transition: all 0.3s;
+    padding-right: 20px;
+    width: 420px;
     color: var(--font-color);
 }
 
@@ -191,34 +144,9 @@ p{
     background-color: var(--navbar-color);
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 600;
-    font-size: 20px;
+    font-size: 17px;
     color: var(--background-color);
     cursor: pointer;
-}
-
-@media (max-width: 1800px) {
-  nav{
-    font-size: 2vw;
-  }  
-}
-
-@media (max-width: 768px) {
-    .BTW {
-        min-width: 200px;
-    }
-}
-
-@media (max-width: 480px) {
-    .BTW {
-        min-width: 100px;
-    }
-  }
-
-/* Media query for larger screens */
-@media (min-width: 1200px) {
-    .BTW {
-        min-width: 520px;
-    }
 }
 
 @media screen and (max-width: 768px) {
@@ -226,5 +154,9 @@ p{
         display: grid;
         grid-template-columns: repeat(2, 1fr); /* Change to 2 columns */
         gap: 20px; /* Adjust the gap between columns if needed */
+    }
+
+    .BTW{
+      width: 280px;
     }
 }

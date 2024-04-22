@@ -4,7 +4,7 @@ module.exports = {
     mode: 'development',
     entry: {
         admin: './src/admistrator.js',
-        login: './src/login.js',
+        index: './src/index.js',
         main: './src/main.js',
         f1:'./src/F1.js',
         f2:'./src/F2.js',
@@ -19,7 +19,7 @@ module.exports = {
     },
     output: {
         path: path.resolve(__dirname, 'dist'),
-        filename: '[name].bundle.js' // Output bundle name will match the entry key (index.bundle.js, login.bundle.js)
+        filename: '[name].bundle.js' 
     },
     watch: true
 };
