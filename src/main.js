@@ -24,7 +24,7 @@ const logoutbutton = document.querySelector('.logout');
 logoutbutton.addEventListener('click', (e) => {
     signOut(auth)
         .then(() =>{
-            window.location.href = "login.html";
+            window.location.href = "index.html";
         }).catch((err) =>{
             console.log(err.message);
         });

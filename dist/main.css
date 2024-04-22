@@ -63,14 +63,21 @@ nav {
     height: 28px;
     width: 60px;
     border-radius: 20px;
-    background-color: var(--background-color);
-    font-size: 13px;
+    background-color: var(--header-color);
+    color: var(--text-color-secondary);
+    font-size: 11px;
     border: 1px solid rgba(0, 0, 0, 0.5);
     transition: var(--tran-04);
     box-shadow: 0 10px 50px rgba(255, 255, 255, .9);
+    cursor: pointer;
 }
 
 .btn button:hover{
+    background-color: var(--background-color);
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    font-size: 12px;
+    color: var(--text-color);
 }
 
 .menu {
