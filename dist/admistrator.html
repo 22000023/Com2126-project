@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin</title>
+    <link rel="stylesheet" href="admistrator.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="OIP.jpeg" alt="University of venda logo">
+        </div>
+        <div class="btn">
+            <button>Done</button>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="buttons">
+            <div class="add button-layout">
+                <button id="addUser">Add new user</button>
+            </div>
+            <div class="delete button-layout">
+                <button id="deleteUser">Delete user</button>
+            </div>
+        </div>
+        <div class="label">
+            <label class="userlabel">User ID</label>
+            <label>User Name</label>
+            <label>User Email</label>
+            <label class="OperationsLabel">Operations</label>
+        </div>
+
+        <div class="userList">
+            <!-- User list will be displayed here -->
+        </div>
+    </div>
+
+    <script>
+        const addUserButton = document.getElementById("addUser");
+        const userListContainer = document.querySelector(".userList");
+
+        addUserButton.addEventListener("click", function () {
+            const userId = prompt("Enter User ID:");
+            const userName = prompt("Enter User Name:");
+            const userEmail = prompt("Enter User Email:");
+
+            // Create user element
+            const userElement = document.createElement("div");
+            userElement.innerHTML = `
+                <label>${userId}</label>
+                <label>${userName}</label>
+                <label>${userEmail}</label>
+                <button class="deleteUserButton">Delete</button>
+            `;
+            userListContainer.appendChild(userElement);
+        });
+
+        userListContainer.addEventListener("click", function (event) {
+            if (event.target.classList.contains("deleteUserButton")) {
+                event.target.parentElement.remove();
+            }
+        });
+    </script>
+</body>
+
+</html>

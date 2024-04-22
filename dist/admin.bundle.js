@@ -40,13 +40,13 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 
 /***/ }),
 
-/***/ "./src/index.js":
-/*!**********************!*\
-  !*** ./src/index.js ***!
-  \**********************/
+/***/ "./src/admistrator.js":
+/*!****************************!*\
+  !*** ./src/admistrator.js ***!
+  \****************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var firebase_app__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! firebase/app */ \"./node_modules/firebase/app/dist/esm/index.esm.js\");\n/* harmony import */ var firebase_auth__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! firebase/auth */ \"./node_modules/firebase/auth/dist/esm/index.esm.js\");\n\r\n\r\n\r\nconst firebaseConfig = {\r\n  apiKey: \"AIzaSyBkTdIOYe8EmG5CVY0QlTcWPyZsFkFzu0s\",\r\n  authDomain: \"univen-room-admission.firebaseapp.com\",\r\n  projectId: \"univen-room-admission\",\r\n  storageBucket: \"univen-room-admission.appspot.com\",\r\n  messagingSenderId: \"671206129429\",\r\n  appId: \"1:671206129429:web:4156d3381c8e418cea331c\"\r\n};\r\n\r\n(0,firebase_app__WEBPACK_IMPORTED_MODULE_0__.initializeApp)(firebaseConfig);\r\nconst auth = (0,firebase_auth__WEBPACK_IMPORTED_MODULE_1__.getAuth)();\r\n\r\nconst signupForm = document.querySelector('.signup');\r\nsignupForm.addEventListener('submit', (e) => {\r\n    e.preventDefault();\r\n\r\n    const email = signupForm.email.value;\r\n    const password = signupForm.password.value;\r\n\r\n    (0,firebase_auth__WEBPACK_IMPORTED_MODULE_1__.createUserWithEmailAndPassword)(auth, email, password)\r\n        .then((cred) =>{\r\n            console.log('user created:', cred.user);\r\n            signupForm.reset();\r\n        }).catch((err) =>{\r\n            console.log(err.message);\r\n        });\r\n});\n\n//# sourceURL=webpack://my-project/./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var firebase_app__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! firebase/app */ \"./node_modules/firebase/app/dist/esm/index.esm.js\");\n/* harmony import */ var firebase_auth__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! firebase/auth */ \"./node_modules/firebase/auth/dist/esm/index.esm.js\");\n\r\n\r\n\r\nconst firebaseConfig = {\r\n  apiKey: \"AIzaSyBkTdIOYe8EmG5CVY0QlTcWPyZsFkFzu0s\",\r\n  authDomain: \"univen-room-admission.firebaseapp.com\",\r\n  projectId: \"univen-room-admission\",\r\n  storageBucket: \"univen-room-admission.appspot.com\",\r\n  messagingSenderId: \"671206129429\",\r\n  appId: \"1:671206129429:web:4156d3381c8e418cea331c\"\r\n};\r\n\r\n(0,firebase_app__WEBPACK_IMPORTED_MODULE_0__.initializeApp)(firebaseConfig);\r\nconst auth = (0,firebase_auth__WEBPACK_IMPORTED_MODULE_1__.getAuth)();\r\n\r\nconst signupForm = document.querySelector('.signup');\r\nsignupForm.addEventListener('submit', (e) => {\r\n    e.preventDefault();\r\n\r\n    const email = signupForm.email.value;\r\n    const password = signupForm.password.value;\r\n\r\n    (0,firebase_auth__WEBPACK_IMPORTED_MODULE_1__.createUserWithEmailAndPassword)(auth, email, password)\r\n        .then((cred) =>{\r\n            console.log('user created:', cred.user);\r\n            signupForm.reset();\r\n        }).catch((err) =>{\r\n            console.log(err.message);\r\n        });\r\n});\n\n//# sourceURL=webpack://my-project/./src/admistrator.js?");
 
 /***/ }),
 
@@ -202,7 +202,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 /******/ 	// startup
 /******/ 	// Load entry module and return exports
 /******/ 	// This entry module can't be inlined because the eval devtool is used.
-/******/ 	var __webpack_exports__ = __webpack_require__("./src/index.js");
+/******/ 	var __webpack_exports__ = __webpack_require__("./src/admistrator.js");
 /******/ 	
 /******/ })()
 ;

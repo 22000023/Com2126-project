@@ -3,7 +3,7 @@ const path = require('path');
 module.exports = {
     mode: 'development',
     entry: {
-        index: './src/index.js',
+        admin: './src/admistrator.js',
         login: './src/login.js',
         main: './src/main.js',
         f1:'./src/F1.js',
