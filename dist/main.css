@@ -220,3 +220,11 @@ p{
         min-width: 520px;
     }
 }
+
+@media screen and (max-width: 768px) {
+    .menu {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); /* Change to 2 columns */
+        gap: 20px; /* Adjust the gap between columns if needed */
+    }
+}
