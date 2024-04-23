@@ -129,20 +129,22 @@ input[type="password"]::-ms-reveal{
     .inputBox,
     .btn button {
         padding: 15px 20px;
-        font-size: 18px; 
+        font-size: 18px;
+        width: 80%;
     }
 
     h1 {
-        font-size: 24px; 
+        font-size: 20px; 
     }
 
     .layoutsize {
-        font-size: 18px; 
+        font-size: 16px; 
     }
 
 
     .error {
-        margin-bottom: 10px; 
+        margin-bottom: 10px;
+        font-size: 16px; 
     }
 
 }
