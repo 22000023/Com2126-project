@@ -34,14 +34,14 @@ header {
     align-items: center;
     justify-content: space-between;
     padding: 10px 20px;
-    height: 50px;
+    height: 65px;
     background-color: var(--navbar-color);
 }
 
 .logo {
     display: flex;
     flex: 0 0 auto;
-    height: 40px;
+    height: 50px;
     margin-right: 20px;
 }
 
@@ -57,9 +57,9 @@ nav {
     align-items: center;
     outline: none;
     border: none;
-    height: 28px;
-    width: 60px;
-    border-radius: 20px;
+    height: 40px;
+    width: 90px;
+    border-radius: 40px;
     background-color: var(--header-color);
     color: var(--text-color-secondary);
     font-size: 11px;
@@ -82,7 +82,7 @@ nav {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, 1fr);
     gap: 30px;
-    padding: 60px 20px;
+    padding: 70px 20px;
 }
 
 .grid-section {
